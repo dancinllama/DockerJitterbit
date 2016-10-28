@@ -9,4 +9,5 @@ FROM library/ubuntu
 sudo dpkg --add-architecture i386
 sudo apt-get update
 sudo apt-get install libc6:i386 libgcc1:i386 libstdc++6:i386 libuuid1:i386 zlib1g:i386 unixodbc python sed sudo unzip tar
-wget https://download.jitterbit.com/v8/agent/8.17/jitterbit-agent_8.17.0.2_i386.dpkg --install jitterbit*.deb
+wget https://download.jitterbit.com/v8/agent/8.17/jitterbit-agent_8.17.0.2_i386.deb
+dpkg --install jitterbit*.deb
