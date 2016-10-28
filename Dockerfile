@@ -12,7 +12,7 @@
 FROM library/ubuntu
 RUN dpkg --add-architecture i386 && \
 	apt-get update && \
-	apt-get install libc6:i386 libgcc1:i386 \
+	apt-get -y install libc6:i386 libgcc1:i386 \
 		libstdc++6:i386 libuuid1:i386 \
 		zlib1g:i386 unixodbc python \
 		sed sudo unzip tar && \
