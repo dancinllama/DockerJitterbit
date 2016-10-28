@@ -6,8 +6,8 @@
 #When configuring, you'll need your harmony username and password.
 #More instructions can be found here: https://success.jitterbit.com/display/DOC/Download+and+Install+Harmony+Linux+Agent
 FROM library/ubuntu
-sudo dpkg --add-architecture i386
-sudo apt-get update
-sudo apt-get install libc6:i386 libgcc1:i386 libstdc++6:i386 libuuid1:i386 zlib1g:i386 unixodbc python sed sudo unzip tar
+dpkg --add-architecture i386
+apt-get update
+apt-get install libc6:i386 libgcc1:i386 libstdc++6:i386 libuuid1:i386 zlib1g:i386 unixodbc python sed sudo unzip tar
 wget https://download.jitterbit.com/v8/agent/8.17/jitterbit-agent_8.17.0.2_i386.deb
 dpkg --install jitterbit*.deb
